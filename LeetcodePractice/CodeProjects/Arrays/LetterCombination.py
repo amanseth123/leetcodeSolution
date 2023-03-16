@@ -1,6 +1,6 @@
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
-        def helper(i,s):
+        def helper(i,s): #it works as a dfs so based on the output of the sample input
             if i>=len(digits):
                 self.ans.append(s)
                 return 
